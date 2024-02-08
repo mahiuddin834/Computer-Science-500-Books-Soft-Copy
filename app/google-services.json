@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "354497072700",
+    "project_id": "computer-science-books-fda24",
+    "storage_bucket": "computer-science-books-fda24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354497072700:android:ba08e1b978a86fa321fd39",
+        "android_client_info": {
+          "package_name": "com.itnation.computersciencebooks"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjwHkQRxhu7oNN8Z3xdZPLxSXTtZGf9vA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

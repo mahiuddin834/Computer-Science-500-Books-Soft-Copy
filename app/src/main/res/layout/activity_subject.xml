@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubjectActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+
+        >
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:scaleType="centerCrop"
+            android:backgroundTint="@color/primary"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/subNameTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Subject Name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+
+            android:textStyle="bold" />
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/subListRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:layout_margin="2dp"
+        />
+
+</RelativeLayout>

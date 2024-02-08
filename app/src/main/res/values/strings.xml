@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Computer Science Books</string>
+
+
+    <string name="home">Home</string>
+    <string name="books">Books</string>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.BooksFragment"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryLight"
+        android:padding="5dp"
+
+        >
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            style="@style/MaterialSearchBarLight"
+            app:mt_hint="Search your books"
+            app:mt_maxSuggestionsCount="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mt_placeholder="All Books"
+            app:mt_navIconEnabled="false"
+            app:mt_placeholderColor="@color/white"
+            android:id="@+id/searchBar"
+            app:mt_searchIconTint="@color/white"
+            app:mt_backIconTint="@color/white"
+            app:mt_clearIconTint="@color/white"
+            app:mt_hintColor="#A4BBC3"
+            app:mt_textColor="@color/white"
+            app:mt_searchBarColor="@color/primaryLight"/>
+
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/allBooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/toolBar"
+
+        />
+
+
+
+</LinearLayout>
